@@ -7,20 +7,98 @@
   <style>
     body {
       font-family: Tahoma, Arial, sans-serif;
-      background: #f9f9f9;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      direction: rtl;
     }
-    h1 {
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    .post {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+    .post h2 {
+      margin-top: 0;
       color: #2c3e50;
     }
-    p {
+    .post p {
       color: #555;
+      line-height: 1.6;
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <h1>مرحبًا بكم في مدونة الإدارة العامة</h1>
-  <p>هذه الصفحة الرئيسية لموقعك عبر GitHub Pages 🚀</p>
+
+  <header>
+    <h1>مدونة الإدارة العامة</h1>
+  </header>
+
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">المقالات</a>
+    <a href="#">حول</a>
+    <a href="#">اتصل بنا</a>
+  </nav>
+
+  <div class="container">
+    <div class="post">
+      <h2>📌 أول مقال في المدونة</h2>
+      <p>
+        هذه بداية مدونتك عبر GitHub Pages. يمكنك إضافة مقالاتك هنا لتشارك المعرفة والأفكار
+        المتعلقة بالإدارة العامة والسياسات والتنظيم.
+      </p>
+    </div>
+
+    <div class="post">
+      <h2>📖 مقال تجريبي آخر</h2>
+      <p>
+        يمكنك تعديل هذا المحتوى أو استبداله بمحتواك الخاص. كل مقال سيكون داخل 
+        &lt;div class="post"&gt; مثل هذا.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 مدونة الإدارة العامة - جميع الحقوق محفوظة</p>
+  </footer>
+
 </body>
 </html>
